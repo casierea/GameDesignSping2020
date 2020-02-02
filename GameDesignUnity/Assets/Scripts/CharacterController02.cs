@@ -33,4 +33,5 @@ public class CharacterController02 : MonoBehaviour
         position.y -= Gravity * Time.deltaTime;
         controller.Move(position * Time.deltaTime);
     }
+    
 }

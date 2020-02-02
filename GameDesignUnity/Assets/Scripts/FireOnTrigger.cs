@@ -42,11 +42,11 @@ public class FireOnTrigger : MonoBehaviour
 		
         if (FacingRight == false)
         {
-            ShootyForce = -BulletSpeed.Value;
+            ShootyForce = -BulletSpeed.value;
         }
         else
         {
-            ShootyForce = BulletSpeed.Value;
+            ShootyForce = BulletSpeed.value;
         }
         GameObject Clone;
         Clone = Instantiate(EnemyShoot, WeaponPosition.position, transform.rotation);
