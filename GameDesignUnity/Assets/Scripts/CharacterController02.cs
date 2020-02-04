@@ -9,12 +9,10 @@ public class CharacterController02 : MonoBehaviour
     private float Gravity = 9.81f;
     public float MoveSpeed = 3.14f;
     private Vector3 Rot;
-
     public Vector3 position;
-    
     public float JumpSpeed = 5f;
     
-    // Start is called before the first frame update
+    
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -32,6 +30,11 @@ public class CharacterController02 : MonoBehaviour
         }
         position.y -= Gravity * Time.deltaTime;
         controller.Move(position * Time.deltaTime);
+
+        if (Input.GetButton("Jump"))
+        {
+            position.y = JumpSpeed;
+        }
     }
     
 }
