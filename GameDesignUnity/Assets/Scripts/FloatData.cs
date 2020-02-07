@@ -6,22 +6,22 @@ using UnityEngine;
 [CreateAssetMenu]
 public class FloatData : ScriptableObject
 {
-    public float value = 1f;
+    public float Value = 1f;
     public float maxValue = 1f;
     public void UpdateValue(float amount)
     {
-        value += amount;
+        Value += amount;
     }
 
     public void ChangeValue(float amount)
     {
-        value = amount;
+        Value = amount;
     }
     public void UpdateValueLimitZero(float amount)
     {
-        if (value < 0)
+        if (Value < 0)
         {
-            value = 0;
+            Value = 0;
         }
         else
         {
@@ -31,13 +31,13 @@ public class FloatData : ScriptableObject
 
     public void UpdateValueLimitZeroAndMaxValue(float amount)
     {
-        if (value < maxValue)
+        if (Value < maxValue)
         {
             UpdateValue(amount);
         }
         else
         {
-            value = maxValue;
+            Value = maxValue;
         }
         UpdateValueLimitZero(amount);
     }

@@ -19,7 +19,7 @@ public class EnemyHealth : MonoBehaviour
 	// Use this for initialization
 	private void Start()
 	{
-		CurrentHealth = StartHealth.value;
+		CurrentHealth = StartHealth.Value;
 	}
 
 	private void Update()
@@ -29,7 +29,7 @@ public class EnemyHealth : MonoBehaviour
 
 	public void DamageHealth(float damage)
 	{
-		if (CurrentHealth > MinHealth.value)
+		if (CurrentHealth > MinHealth.Value)
 		{
 			CurrentHealth -= damage;
 		}
@@ -37,7 +37,7 @@ public class EnemyHealth : MonoBehaviour
 
 	public void HealHealth(float heal)
 	{
-		if (CurrentHealth < MaxHealth.value)
+		if (CurrentHealth < MaxHealth.Value)
 		{
 			CurrentHealth += heal;
 		}
@@ -45,7 +45,7 @@ public class EnemyHealth : MonoBehaviour
 
 	public void ZeroHealth()
 	{
-		if (CurrentHealth <= MinHealth.value)
+		if (CurrentHealth <= MinHealth.Value)
 		{
 			//die
 			gameObject.GetComponent<BoxCollider>().enabled = false;
