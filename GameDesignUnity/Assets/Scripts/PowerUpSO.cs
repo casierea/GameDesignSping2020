@@ -4,10 +4,12 @@
 
 public class PowerUpSO : ScriptableObject
 {
-    public FloatData Data;
+    public FloatDataValue Data;
     
-    public void OnPowerUp(FloatData outsideData)
+    public void OnPowerUp(FloatDataValue outsideData)
     {
+        Debug.Log(outsideData.Value);
+        
         outsideData.Value += Data.Value;
     }
 }

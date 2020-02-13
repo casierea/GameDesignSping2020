@@ -12,7 +12,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Ai" t="Include">
-            <e p="AiBasic.cs" t="Include" />
+            <e p="BasicAi.cs" t="Include" />
           </e>
           <e p="AiPlayer.cs" t="Include" />
           <e p="AnimaController.cs" t="Include" />
@@ -23,7 +23,7 @@
           <e p="EnemyHealth.cs" t="Include" />
           <e p="FireOnTrigger.cs" t="Include" />
           <e p="FloatData.cs" t="Include" />
-          <e p="FloatData02.cs" t="Include" />
+          <e p="FloatDataValue.cs" t="Include" />
           <e p="GameAction.cs" t="Include" />
           <e p="GameActionHandler.cs" t="Include" />
           <e p="MouseEvents.cs" t="Include" />
@@ -36,6 +36,7 @@
           <e p="RandomDropCollision.cs" t="Include" />
           <e p="SceneChanger.cs" t="Include" />
           <e p="StateMachine.cs" t="Include" />
+          <e p="TriggerEnter.cs" t="Include" />
           <e p="TriggerEvents.cs" t="Include" />
         </e>
       </e>
