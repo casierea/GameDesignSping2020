@@ -9000,12 +9000,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 916112397}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5421a2900a5b4fd41b96f87a175d08af, type: 3}
+  m_Script: {fileID: 11500000, guid: 9275b4d92a6c852448f6768f858e15ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 10
-  Gravity: 5
-  JumpSpeed: 30
+  speed: 6
+  jumpSpeed: 8
+  rotateSpeed: 2
+  gravity: 20
 --- !u!143 &916112401 stripped
 CharacterController:
   m_CorrespondingSourceObject: {fileID: 916112401, guid: 45ac279185b419f4790dd020d3976030,
