@@ -17,6 +17,13 @@
           <e p="AiPlayer.cs" t="Include" />
           <e p="AnimaController.cs" t="Include" />
           <e p="AnimSetTrigger.cs" t="Include" />
+          <e p="Character" t="Include">
+            <e p="CameraFollow.cs" t="Include" />
+            <e p="CameraLookAt.cs" t="Include" />
+            <e p="ControlCharacter.cs" t="Include" />
+            <e p="GoMove.cs" t="Include" />
+            <e p="MoveFeb16.cs" t="Include" />
+          </e>
           <e p="CharacterController02.cs" t="Include" />
           <e p="CharacterMove03.cs" t="Include" />
           <e p="DestroyEvent.cs" t="Include" />
@@ -27,8 +34,10 @@
           <e p="GameAction.cs" t="Include" />
           <e p="GameActionHandler.cs" t="Include" />
           <e p="MouseEvents.cs" t="Include" />
-          <e p="Mover02.cs" t="Include" />
           <e p="ObjCollectionList.cs" t="Include" />
+          <e p="OldFolder" t="Include">
+            <e p="Mover02.cs" t="Include" />
+          </e>
           <e p="PlayMove02.cs" t="Include" />
           <e p="PowerUpSO.cs" t="Include" />
           <e p="PowerUpsSO.cs" t="Include" />
