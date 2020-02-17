@@ -8991,6 +8991,21 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1925836400}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &916112398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916112397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5421a2900a5b4fd41b96f87a175d08af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 10
+  Gravity: 5
+  JumpSpeed: 30
 --- !u!143 &916112401 stripped
 CharacterController:
   m_CorrespondingSourceObject: {fileID: 916112401, guid: 45ac279185b419f4790dd020d3976030,
@@ -9003,23 +9018,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1925836400}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &916112406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 916112397}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c15223d8226eb5d459e87ba47bbbf125, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 10
-  jumpSpeed: 30
-  rotationSpeed: 100
-  gravity: 9.81
-  jumpCountMax: 2
 --- !u!114 &916112407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9027,7 +9025,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 916112397}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55c8053260ce208429ec5bea6e6acbc0, type: 3}
   m_Name: 
@@ -20485,7 +20483,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: EmpyObjectCandle
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 916112399, guid: 45ac279185b419f4790dd020d3976030, type: 3}
+    - {fileID: 916112400, guid: 45ac279185b419f4790dd020d3976030, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 45ac279185b419f4790dd020d3976030, type: 3}
 --- !u!1001 &1932231359
 PrefabInstance:
@@ -22963,6 +22963,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 254
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2129479397 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5647455589020114358, guid: 2d896da46adad5b47a5f440bed986b1d,
+    type: 3}
+  m_PrefabInstance: {fileID: 115688618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2129479398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129479397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 066530e0384a3904d9e59193e8ecb674, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 916112397}
 --- !u!1 &2130657392
 GameObject:
   m_ObjectHideFlags: 0
