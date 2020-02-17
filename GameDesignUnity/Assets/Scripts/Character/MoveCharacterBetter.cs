@@ -17,6 +17,8 @@ public class MoveCharacterBetter : MonoBehaviour
     public float rotateSpeed = 2.0f;
     public float gravity = 20.0f;
 
+    private Vector3 noRotate;
+    
     private bool goHorizontal = false;
     
     private Vector3 moveDirection = Vector3.zero;
@@ -42,7 +44,9 @@ public class MoveCharacterBetter : MonoBehaviour
 
         if (moveDirection != Vector3.zero)
         {
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation( moveDirection),0.15f );
+           noRotate = new Vector3(0,moveDirection.y,moveDirection.z);
+            
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(noRotate),0.15f );
         }
 
 

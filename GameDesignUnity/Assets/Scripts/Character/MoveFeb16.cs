@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class MoveFeb16 : MonoBehaviour
 
-//Nats for undertstanding
+//Nats for undertstanding. Want to go back and undertsand Quaterions
 {
     private CharacterController charController;
     private Vector3 position;

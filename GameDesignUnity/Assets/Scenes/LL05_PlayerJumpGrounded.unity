@@ -1468,7 +1468,7 @@ PrefabInstance:
     - target: {fileID: 5647455589020114359, guid: 2d896da46adad5b47a5f440bed986b1d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5112972
+      value: 15.73
       objectReference: {fileID: 0}
     - target: {fileID: 5647455589020114359, guid: 2d896da46adad5b47a5f440bed986b1d,
         type: 3}
@@ -8991,22 +8991,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1925836400}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &916112398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 916112397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9275b4d92a6c852448f6768f858e15ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 6
-  jumpSpeed: 8
-  rotateSpeed: 2
-  gravity: 20
 --- !u!143 &916112401 stripped
 CharacterController:
   m_CorrespondingSourceObject: {fileID: 916112401, guid: 45ac279185b419f4790dd020d3976030,
@@ -9019,22 +9003,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1925836400}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &916112407
+--- !u!114 &916112408
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 916112397}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55c8053260ce208429ec5bea6e6acbc0, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ac72098863ebc840b336826211ee984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
-  jumpSpeed: 8
-  rotateSpeed: 2
-  gravity: 20
+  MoveSpeed: 10
+  Gravity: 5
+  JumpSpeed: 30
 --- !u!1001 &929736410
 PrefabInstance:
   m_ObjectHideFlags: 0

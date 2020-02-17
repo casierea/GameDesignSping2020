@@ -6,10 +6,6 @@
     <e p="E:\Spring2020\TheRepositories\FreshGameDesign\GameDesignSping2020\GameDesignUnity" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Mover" t="Include">
-          <e p="Movement.cs" t="Include" />
-          <e p="PlayerMovement.cs" t="Include" />
-        </e>
         <e p="Scripts" t="Include">
           <e p="Ai" t="Include">
             <e p="BasicAi.cs" t="Include" />
@@ -17,15 +13,17 @@
           <e p="AiPlayer.cs" t="Include" />
           <e p="AnimaController.cs" t="Include" />
           <e p="AnimSetTrigger.cs" t="Include" />
-          <e p="Character" t="Include">
-            <e p="BasicCharContrl.cs" t="Include" />
-            <e p="CameraLookAt.cs" t="Include" />
+          <e p="Camera" t="Include">
+            <e p="CameraFocus.cs" t="Include" />
             <e p="ControlCam.cs" t="Include" />
+          </e>
+          <e p="Character" t="Include">
+            <e p="BasicCharControl.cs" t="Include" />
+            <e p="CMover.cs" t="Include" />
+            <e p="ControlCharacter.cs" t="Include" />
             <e p="MoveCharacterBetter.cs" t="Include" />
             <e p="MoveFeb16.cs" t="Include" />
           </e>
-          <e p="CharacterController02.cs" t="Include" />
-          <e p="CharacterMove03.cs" t="Include" />
           <e p="DestroyEvent.cs" t="Include" />
           <e p="EnemyHealth.cs" t="Include" />
           <e p="FireOnTrigger.cs" t="Include" />
@@ -34,11 +32,17 @@
           <e p="GameAction.cs" t="Include" />
           <e p="GameActionHandler.cs" t="Include" />
           <e p="MouseEvents.cs" t="Include" />
+          <e p="Mover" t="Include">
+            <e p="Movement.cs" t="Include" />
+          </e>
           <e p="ObjCollectionList.cs" t="Include" />
           <e p="OldFolder" t="Include">
+            <e p="CharacterController02.cs" t="Include" />
+            <e p="CharacterMove03.cs" t="Include" />
             <e p="Mover02.cs" t="Include" />
+            <e p="PlayerMovement.cs" t="Include" />
+            <e p="PlayMove02.cs" t="Include" />
           </e>
-          <e p="PlayMove02.cs" t="Include" />
           <e p="PowerUpSO.cs" t="Include" />
           <e p="PowerUpsSO.cs" t="Include" />
           <e p="PowerUpStates.cs" t="Include" />
