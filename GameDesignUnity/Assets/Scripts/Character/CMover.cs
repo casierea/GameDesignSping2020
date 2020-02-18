@@ -3,9 +3,7 @@ using UnityEngine.Serialization;
 	
 [RequireComponent(typeof(CharacterController))]
 public class CMover : MonoBehaviour
-{
-    
-	    
+{	    
     private Vector3 position;
     private CharacterController controller;
 	    
