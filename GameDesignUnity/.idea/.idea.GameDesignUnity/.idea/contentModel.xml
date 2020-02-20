@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\casie\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\casie\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_GameDesignUnity.23561738.00" t="ExcludeRecursive" />
-    <e p="E:\Spring2020\TheRepositories\FreshGameDesign\GameDesignSping2020\GameDesignUnity" t="IncludeRecursive">
+    <e p="C:\Users\WunderDuck\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\WunderDuck\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_GameDesignUnity.-308556705.00" t="ExcludeRecursive" />
+    <e p="C:\Users\WunderDuck\Documents\c_MartyClass\GameDesignSping2020\GameDesignUnity" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Push02.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Ai" t="Include">
             <e p="BasicAi.cs" t="Include" />
@@ -61,6 +62,7 @@
           <e p="PowerUpStates.cs" t="Include" />
           <e p="RandomDropCollision.cs" t="Include" />
           <e p="SceneChanger.cs" t="Include" />
+          <e p="SceneManagement.cs" t="Include" />
           <e p="StateMachine.cs" t="Include" />
           <e p="test" t="Include">
             <e p="destroyObject.cs" t="Include" />
@@ -75,12 +77,9 @@
         </e>
       </e>
       <e p="GameDesignUnity.sln" t="IncludeFlat" />
-      <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
-      <e p="Temp" t="ExcludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-      </e>
+      <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
   </component>
 </project>
