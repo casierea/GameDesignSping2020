@@ -7,6 +7,8 @@ public class updateValue : ScriptableObject
 {
    public FloatData DeltaValue;
    public GameObject targetObject;
+
+   public FloatData PlayerSparkleTotal;
    //public FloatData TargetObjectboop;
    public void ChangeTargetValue(FloatData targetData)
    {
