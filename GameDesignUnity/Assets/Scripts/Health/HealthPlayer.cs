@@ -10,13 +10,13 @@ public class HealthPlayer : MonoBehaviour
     public int maxHealth = 20;
     public int currentHealth;
 
-    public HealthBar healthBar;
+    //public HealthBar healthBar;
     
 
     void Start()
     {
         currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+        //healthBar.SetMaxHealth(maxHealth);
     }
 
     void Update()
@@ -30,6 +30,6 @@ public class HealthPlayer : MonoBehaviour
     void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
+        //healthBar.SetHealth(currentHealth);
     }
 }
