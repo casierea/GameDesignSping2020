@@ -14,6 +14,7 @@ public class CMover : MonoBehaviour
 	
 	
     void Start()
+    
     {
         controller = GetComponent<CharacterController>();
     }
