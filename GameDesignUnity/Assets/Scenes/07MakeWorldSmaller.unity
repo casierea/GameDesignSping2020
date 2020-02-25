@@ -13131,6 +13131,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 916112405, guid: 9462862f26e8b0f45b35dc69a0b73d6a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 916112398, guid: 9462862f26e8b0f45b35dc69a0b73d6a, type: 3}
     - {fileID: 1468146572, guid: 9462862f26e8b0f45b35dc69a0b73d6a, type: 3}
@@ -39175,6 +39179,51 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 718229128}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2023805261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023805254}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a94d2bde1688f47b79398d6bf29d89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 0, z: 0}
+  controller: {fileID: 0}
+  jumpSpeed: 30
+  rotationSpeed: 100
+  gravity: 9.81
+  moveSpeed: 10
+  jumpCount: 0
+  jumpCountMax: 2
+  speedUpEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_CallsDirty: 1
+  speedDownEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_CallsDirty: 1
+  walkSpeed: 30
+  sprintSpeed: 60
 --- !u!4 &2023805262 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 916112403, guid: 9462862f26e8b0f45b35dc69a0b73d6a,
