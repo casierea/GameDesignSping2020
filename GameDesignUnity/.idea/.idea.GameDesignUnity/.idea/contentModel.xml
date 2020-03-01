@@ -32,16 +32,13 @@
           <e p="GameAction.cs" t="Include" />
           <e p="GameActionHandler.cs" t="Include" />
           <e p="Health" t="Include">
+            <e p="Health.cs" t="Include" />
             <e p="HealthBar.cs" t="Include" />
-            <e p="HealthPlayer.cs" t="Include" />
             <e p="Rewrite" t="Include">
               <e p="Example.cs" t="Include" />
               <e p="Forceful.cs" t="Include" />
-              <e p="HealthScript.cs" t="Include" />
               <e p="Push.cs" t="Include" />
-              <e p="Sword.cs" t="Include" />
             </e>
-            <e p="UpdateImageValue.cs" t="Include" />
           </e>
           <e p="MouseEvents.cs" t="Include" />
           <e p="Mover" t="Include">
@@ -68,10 +65,8 @@
           <e p="StateMachine.cs" t="Include" />
           <e p="test" t="Include">
             <e p="destroyObject.cs" t="Include" />
-            <e p="HealthScript.cs" t="Include" />
             <e p="lootPickup.cs" t="Include" />
             <e p="onTriggerSword.cs" t="Include" />
-            <e p="PlayerHealthScript.cs" t="Include" />
             <e p="TriggerEnter.cs" t="Include" />
             <e p="updateValue.cs" t="Include" />
             <e p="valueManager.cs" t="Include" />

@@ -22,7 +22,7 @@ public class onTriggerSword : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        var otherHealth = other.GetComponent<healthScript>();
+        var otherHealth = other.GetComponent<Health>();
         if (otherHealth == null)
         {
             Debug.Log("no health module on other");
