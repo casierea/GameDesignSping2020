@@ -17,13 +17,13 @@ public class TriggerEnter : MonoBehaviour
     void OnEnable()
     {
         //Enable.Invoke();
-        Debug.Log("Enable");
+        Debug.Log("EnableTrigger");
     }
 
     private void OnTriggerEnter(Collider other)
     {
         EnterEvent.Invoke();
-        Debug.Log("Enter");
+        Debug.Log("EnterTrigger");
     }
 
     private void OnTriggerExit(Collider other)

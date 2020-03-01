@@ -17,7 +17,7 @@ public class onTriggerSword : MonoBehaviour
     void OnEnable()
     {
         //Enable.Invoke();
-        Debug.Log("Enable");
+        //Debug.Log("Enable");
     }
 
     private void OnTriggerEnter(Collider other)
@@ -25,14 +25,14 @@ public class onTriggerSword : MonoBehaviour
         var otherHealth = other.GetComponent<OtherHealth>();
         if (otherHealth == null)
         {
-            Debug.Log("no health module on other");
+            //Debug.Log("no health module on other");
             //abandon all hope
         }
         else
         {
             //Trigger.Invoke();
             otherHealth.ChangeHealth(SwordDamage.Value);
-            Debug.Log("trigger entered SWORRRDD");    
+            //Debug.Log("trigger entered SWORRRDD");    
         }
         
     }
