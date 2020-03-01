@@ -6,6 +6,7 @@
     <e p="E:\Spring2020\TheRepositories\FreshGameDesign\GameDesignSping2020\GameDesignUnity" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="ImageController.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Ai" t="Include">
             <e p="BasicAi.cs" t="Include" />
@@ -37,10 +38,10 @@
               <e p="Example.cs" t="Include" />
               <e p="Forceful.cs" t="Include" />
               <e p="HealthScript.cs" t="Include" />
-              <e p="Image.cs" t="Include" />
               <e p="Push.cs" t="Include" />
               <e p="Sword.cs" t="Include" />
             </e>
+            <e p="UpdateImageValue.cs" t="Include" />
           </e>
           <e p="MouseEvents.cs" t="Include" />
           <e p="Mover" t="Include">
@@ -70,6 +71,7 @@
             <e p="HealthScript.cs" t="Include" />
             <e p="lootPickup.cs" t="Include" />
             <e p="onTriggerSword.cs" t="Include" />
+            <e p="PlayerHealthScript.cs" t="Include" />
             <e p="TriggerEnter.cs" t="Include" />
             <e p="updateValue.cs" t="Include" />
             <e p="valueManager.cs" t="Include" />
@@ -81,6 +83,7 @@
           </e>
           <e p="TriggerFall.cs" t="Include" />
         </e>
+        <e p="UIImageContr.cs" t="Include" />
       </e>
       <e p="GameDesignUnity.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />
