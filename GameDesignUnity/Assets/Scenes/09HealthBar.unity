@@ -15364,6 +15364,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 650901568, guid: 9462862f26e8b0f45b35dc69a0b73d6a, type: 3}
+      propertyPath: m_DrawHalo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 650901568, guid: 9462862f26e8b0f45b35dc69a0b73d6a, type: 3}
+      propertyPath: m_Type
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 916112398, guid: 9462862f26e8b0f45b35dc69a0b73d6a, type: 3}
     - {fileID: 1468146572, guid: 9462862f26e8b0f45b35dc69a0b73d6a, type: 3}
@@ -31131,7 +31139,7 @@ PrefabInstance:
     - target: {fileID: 1314795733, guid: 976076ed742945749b04c7c0f49f4108, type: 3}
       propertyPath: LootTable.Array.data[0]
       value: 
-      objectReference: {fileID: 1656600552, guid: e544644e7bb103246b7821a6a63af488,
+      objectReference: {fileID: 1656600552, guid: 64933df7f9b968d448f830ad9efb216f,
         type: 3}
     - target: {fileID: 1314795733, guid: 976076ed742945749b04c7c0f49f4108, type: 3}
       propertyPath: maxHealth
@@ -39907,6 +39915,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 88
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1734513969 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 650901566, guid: 9462862f26e8b0f45b35dc69a0b73d6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 718229128}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1734513972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734513969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5217151f780816d40911c784deb77867, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightStatus: 0
 --- !u!4 &1735935694 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4903645949471426231, guid: 8a2fb61338734bc45a640683421dc998,
