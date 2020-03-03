@@ -23,12 +23,12 @@ public class TriggerEnter : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         EnterEvent.Invoke();
-        Debug.Log("EnterTrigger");
+        
     }
 
     private void OnTriggerExit(Collider other)
     {
         ExitEvent.Invoke();
-        //Destroy(gameObject);
+        
     }
 }
