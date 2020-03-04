@@ -22477,23 +22477,17 @@ MonoBehaviour:
   EnterEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 4a2a5cb9cdfe0734eaa6d39665a14566, type: 2}
-        m_MethodName: ChangeTargetValue
-        m_Mode: 2
+      - m_Target: {fileID: 2023805255}
+        m_MethodName: ChangeHealth
+        m_Mode: 4
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 578ddb6e52bfb20439b3c5e42672eff6,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 5
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  ExitEvent:
-    m_PersistentCalls:
-      m_Calls:
       - m_Target: {fileID: 975748069}
         m_MethodName: set_enabled
         m_Mode: 6
@@ -22505,6 +22499,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  ExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!136 &975748071
@@ -48039,7 +48038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 200
-  currentHealth: 0
+  currentHealth: {fileID: 11400000, guid: 578ddb6e52bfb20439b3c5e42672eff6, type: 2}
   LootTable: []
   healthBar: {fileID: 505342752}
 --- !u!4 &2023805262 stripped

@@ -20,4 +20,9 @@ public class HealthBar : MonoBehaviour
       slider.value = health;
       Debug.Log(health);
    }
+
+   //public void IncreaseSliderHealth()
+   //{
+      //floatdata healthup objects are added to player health script, which is reflected in the slider.
+   //}
 }

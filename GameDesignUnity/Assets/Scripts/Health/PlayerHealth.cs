@@ -7,25 +7,25 @@ public class PlayerHealth : MonoBehaviour
 
 {
 //change to FloatData
-    public float maxHealth = 20f;
+    public float maxHealth = 100f;
 //change to private in production
-    public float currentHealth;
+    public FloatData currentHealth;
     public List<GameObject> LootTable;
 
     private GameObject droppedLoot; //this is the loot that is dropped in the dropLoot() function
 //public UnityEvent DeathEvent;
 //public UnityEvent DropLoot;
-//maybe put in a healthbar later to show robot health above their heads
-//public HealthBar healthBar;
+
+
     public Slider healthBar;
 
     void Start()
     {
-        currentHealth = maxHealth;
+        currentHealth.Value = maxHealth;
         if (healthBar != null)
         {
             healthBar.GetComponent<HealthBar>().SetMaxHealth(maxHealth);
-            healthBar.GetComponent<HealthBar>().SetHealth(currentHealth);
+            healthBar.GetComponent<HealthBar>().SetHealth(currentHealth.Value);
         }
        
     }
@@ -38,10 +38,10 @@ public class PlayerHealth : MonoBehaviour
 
     public void ChangeHealth(float delta)
     {
-        currentHealth += delta;
+        currentHealth.Value += delta;
         if (healthBar != null)
         {
-            healthBar.GetComponent<HealthBar>().SetHealth(currentHealth);
+            healthBar.GetComponent<HealthBar>().SetHealth(currentHealth.Value);
         }
         //healthBar.GetComponent<HealthBar>().SetHealth(currentHealth);
     }
@@ -50,7 +50,7 @@ public class PlayerHealth : MonoBehaviour
     {
 //convert to Scriptable Object Event
 //call death event
-        if (currentHealth == 0)
+        if (currentHealth.Value == 0)
         {
 //disable collider
             (gameObject.GetComponent(typeof(Collider)) as Collider).isTrigger = false;
@@ -60,8 +60,16 @@ public class PlayerHealth : MonoBehaviour
             //dropLoot();
         }
 
+        
     }
 
+    //public void HealHealth(float heal)
+    //{
+        //if (currentHealth < maxHealth)
+        //{
+        //    currentHealth += heal;
+        //}
+   // }
    // private void dropLoot()
    // {
 //convert to Scriptable Object or Unity Event call
@@ -73,8 +81,8 @@ public class PlayerHealth : MonoBehaviour
            // int rand = Random.Range(0, LootTable.Count);
             //droppedLoot = LootTable[rand];
             //Instantiate(droppedLoot, gameObject.GetComponent<Transform>().position, gameObject.GetComponent<Transform>().rotation);
-        }
+        //}
 
     //}
 
-//}
+}
