@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\WunderDuck\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\WunderDuck\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_GameDesignUnity.-308556705.00" t="ExcludeRecursive" />
-    <e p="C:\Users\WunderDuck\Documents\c_MartyClass\GameDesignSping2020\GameDesignUnity" t="IncludeRecursive">
+    <e p="C:\Users\casie\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\casie\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_GameDesignUnity.23561738.00" t="ExcludeRecursive" />
+    <e p="E:\Spring2020\TheRepositories\FreshGameDesign\GameDesignSping2020\GameDesignUnity" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="ImageController.cs" t="Include" />
-        <e p="Portal.cs" t="Include" />
+        <e p="LightBehaviour.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Ai" t="Include">
             <e p="AiPlayer.cs" t="Include" />
@@ -41,7 +40,7 @@
               <e p="Push.cs" t="Include" />
             </e>
           </e>
-          <e p="LightBehaviour.cs" t="Include" />
+          <e p="ImageController.cs" t="Include" />
           <e p="MouseEvents.cs" t="Include" />
           <e p="Mover" t="Include">
             <e p="Movement.cs" t="Include" />
@@ -59,6 +58,7 @@
             <e p="PlayMove02.cs" t="Include" />
           </e>
           <e p="OnOffLight.cs" t="Include" />
+          <e p="Portal.cs" t="Include" />
           <e p="PowerUp" t="Include">
             <e p="PowerUpSO.cs" t="Include" />
             <e p="PowerUpsSO.cs" t="Include" />
@@ -66,7 +66,9 @@
           </e>
           <e p="RandomDropCollision.cs" t="Include" />
           <e p="Robot" t="Include">
+            <e p="EnemyPatrolAi.cs" t="Include" />
             <e p="OtherHealth.cs" t="Include" />
+            <e p="RoboLightBehav.cs" t="Include" />
             <e p="WeaponRobot.cs" t="Include" />
           </e>
           <e p="SceneChanger.cs" t="Include" />
@@ -86,13 +88,16 @@
             <e p="TriggerEvents.cs" t="Include" />
           </e>
           <e p="TriggerFall.cs" t="Include" />
+          <e p="UIImageContr.cs" t="Include" />
         </e>
-        <e p="UIImageContr.cs" t="Include" />
       </e>
       <e p="GameDesignUnity.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
-      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
     </e>
   </component>
 </project>
