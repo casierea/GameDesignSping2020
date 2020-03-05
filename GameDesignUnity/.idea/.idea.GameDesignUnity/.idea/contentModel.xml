@@ -6,6 +6,7 @@
     <e p="E:\Spring2020\TheRepositories\FreshGameDesign\GameDesignSping2020\GameDesignUnity" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="DropItem.cs" t="Include" />
         <e p="LightBehaviour.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Ai" t="Include">
@@ -42,6 +43,7 @@
             <e p="UodateImageValue.cs" t="Include" />
           </e>
           <e p="ImageController.cs" t="Include" />
+          <e p="InstantiateGameObject.cs" t="Include" />
           <e p="MouseEvents.cs" t="Include" />
           <e p="Mover" t="Include">
             <e p="Movement.cs" t="Include" />
@@ -90,6 +92,7 @@
           </e>
           <e p="TriggerFall.cs" t="Include" />
           <e p="UIImageContr.cs" t="Include" />
+          <e p="WaitOnSetTime.cs" t="Include" />
         </e>
       </e>
       <e p="GameDesignUnity.sln" t="IncludeFlat" />
