@@ -13,10 +13,11 @@ public class TriggerEnter : MonoBehaviour
     public UnityEvent EnableEvent;
     public UnityEvent EnterEvent;
     public UnityEvent ExitEvent;
+    public UnityEvent StayEvent;
 
     void OnEnable()
     {
-        //Enable.Invoke();
+        EnableEvent.Invoke();
         Debug.Log("EnableTrigger");
     }
 
@@ -30,5 +31,10 @@ public class TriggerEnter : MonoBehaviour
     {
         ExitEvent.Invoke();
         
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        StayEvent.Invoke();
     }
 }
