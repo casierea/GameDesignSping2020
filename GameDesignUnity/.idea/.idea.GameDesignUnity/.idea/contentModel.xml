@@ -6,6 +6,12 @@
     <e p="E:\Spring2020\TheRepositories\FreshGameDesign\GameDesignSping2020\GameDesignUnity" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Animation" t="Include">
+          <e p="AnimaController.cs" t="Include" />
+          <e p="AnimationPlay.cs" t="Include" />
+          <e p="AnimController.cs" t="Include" />
+          <e p="AnimSetTrigger.cs" t="Include" />
+        </e>
         <e p="DropItem.cs" t="Include" />
         <e p="LightBehaviour.cs" t="Include" />
         <e p="Scripts" t="Include">
@@ -13,8 +19,6 @@
             <e p="AiPlayer.cs" t="Include" />
             <e p="BasicAi.cs" t="Include" />
           </e>
-          <e p="AnimaController.cs" t="Include" />
-          <e p="AnimSetTrigger.cs" t="Include" />
           <e p="Camera" t="Include">
             <e p="CameraFocus.cs" t="Include" />
             <e p="ControlCam.cs" t="Include" />
