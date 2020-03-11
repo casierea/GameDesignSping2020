@@ -15,7 +15,7 @@ public class AnimController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown("1"))
+        if (Input.GetKeyDown("enter"))
         {
             //anim2.Play("AnimaSwing");
             anim2.Play("EmptSwingAnim");
