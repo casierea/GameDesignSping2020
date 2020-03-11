@@ -17,7 +17,8 @@ public class AnimController : MonoBehaviour
     {
         if (Input.GetKeyDown("1"))
         {
-            anim2.Play("AnimaSwing");
+            //anim2.Play("AnimaSwing");
+            anim2.Play("EmptSwingAnim");
         }
     }
 }
