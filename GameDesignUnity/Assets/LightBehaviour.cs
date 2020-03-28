@@ -3,13 +3,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.UIElements;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LightBehaviour : MonoBehaviour
 {
     public FloatData SparkleTotal;
+    public float StartSparkleVal = 100f;
     public int lossRate = 5;
     private Boolean lightStatus = false;
+    public Slider SparkleBar;
 
+    private void Start()
+    {
+        if (SparkleBar != null)
+        {
+            SparkleTotal.Value = StartSparkleVal;
+            SparkleBar.GetComponent<SparkleBar>().SetMaxSparkle(SparkleTotal.maxValue);
+            SparkleBar.GetComponent<SparkleBar>().SetSparkle(SparkleTotal.Value);
+            
+        }
+    }
     private void Update()
     {
         this.GetComponent<Light>().enabled = lightStatus;
@@ -33,6 +46,11 @@ public class LightBehaviour : MonoBehaviour
         if (lightStatus == true)
         {
             SparkleTotal.Value -= lossRate * Time.deltaTime;
+            
+        }
+        if (SparkleBar != null)
+        {
+            SparkleBar.GetComponent<SparkleBar>().SetSparkle(SparkleTotal.Value);
         }
     }
     private void lightSwitch()

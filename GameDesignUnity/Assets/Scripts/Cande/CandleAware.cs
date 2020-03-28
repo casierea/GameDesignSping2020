@@ -31,6 +31,15 @@ public class CandleAware : MonoBehaviour
         setDestination();
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (playerIsClose)
+        {
+            destination = Player.GetComponent<Transform>().position;
+        }
+
+    }
+
     private void setDestination()
     {
         float destinationDistance = Vector3.Distance(destination, this.GetComponent<Transform>().position);
