@@ -63,13 +63,14 @@ public class EnemyPatrolAi : MonoBehaviour
         Debug.Log(other.tag);
         Debug.Log(other);
         
-        if (other.tag == "Enemy")
+        //if (other.tag == "Enemy")
+        if (other.tag == "Player")
         {
             
             playerIsClose = true;
             destination = Player.GetComponent<Transform>().position;
             Player.GetComponentInChildren<LightBehaviour>().lossRate += 1;
-            other.GetComponentInChildren<RoboLightBehav>().lossRate -= 1;
+            this.GetComponentInChildren<RoboLightBehav>().lossRate -= 1;
             //Debug.Log(destination);    
 
         }
@@ -77,12 +78,12 @@ public class EnemyPatrolAi : MonoBehaviour
     }
     public void playerNotClose(GameObject other)
     {
-        if (other.tag == "Enemy")
+        if (other.tag == "Player")
         {
             playerIsClose = false;
             destination = PatrolPoints[CurrentDestination].Value;
             Player.GetComponentInChildren<LightBehaviour>().lossRate -= 1;
-            other.GetComponentInChildren <RoboLightBehav>().lossRate += 1;
+            this.GetComponentInChildren <RoboLightBehav>().lossRate += 1;
             //Debug.Log("player close false");
         }
     }
