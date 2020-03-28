@@ -18,7 +18,7 @@ public class TriggerEnter : MonoBehaviour
     void OnEnable()
     {
         EnableEvent.Invoke();
-        Debug.Log("EnableTrigger");
+        //Debug.Log("EnableTrigger");
     }
 
     private void OnTriggerEnter(Collider other)
