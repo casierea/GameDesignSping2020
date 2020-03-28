@@ -87,6 +87,13 @@ public class EnemyPatrolAi : MonoBehaviour
             //Debug.Log("player close false");
         }
     }
+
+   public IEnumerator PauseNavigation()
+    {
+        yield return new WaitForSeconds(3);     
+        
+    }
+  
 }
 
 	
