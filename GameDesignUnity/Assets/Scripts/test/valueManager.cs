@@ -25,23 +25,16 @@ public class valueManager : MonoBehaviour
     
     public void ChangeSparkleTotal(float delta)
     {
-       // currentSparkle.Value += delta;
+      
         SparkleTotal.Value += delta;
         
         if (SparkleBar != null)
         {
             SparkleBar.GetComponent<SparkleBar>().SetSparkle(SparkleTotal.Value);
         }
-        //healthBar.GetComponent<HealthBar>().SetHealth(currentHealth);
+     
     }
     
-    //public void ChangeSparkleTotal(float delta)
-    //{
-    //    SparkleTotal.Value += delta; try this next
-    
-    //}
-    
-    //new stuff
-   
+
 
 }
