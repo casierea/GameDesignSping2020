@@ -11,7 +11,7 @@ public class PlayerHealth : MonoBehaviour
 //change to private in production
     public FloatData currentHealth;
     public List<GameObject> LootTable;
-
+    
     private GameObject droppedLoot; //this is the loot that is dropped in the dropLoot() function
 //public UnityEvent DeathEvent;
 //public UnityEvent DropLoot;
@@ -32,6 +32,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
+        healthBar.GetComponent<HealthBar>().SetHealth(currentHealth.Value);
         onZeroHealth();
         
     }

@@ -13,6 +13,8 @@ public class LightBehaviour : MonoBehaviour
     private Boolean lightStatus = false;
     public Slider SparkleBar;
 
+    public float minValue = 0f;
+    
     private void Start()
     {
         if (SparkleBar != null)
@@ -32,7 +34,8 @@ public class LightBehaviour : MonoBehaviour
         {
             this.GetComponent<Light>().intensity = SparkleTotal.Value;
             this.GetComponent<Light>().range = SparkleTotal.Value / 10;
-            this.GetComponent<SphereCollider>().radius = SparkleTotal.Value / 10;
+            this.GetComponent<SphereCollider>().radius = SparkleTotal.Value / 2;
+            
         }
         else
         {
@@ -43,7 +46,7 @@ public class LightBehaviour : MonoBehaviour
             lightSwitch();
         }
 
-        if (lightStatus == true)
+        if (lightStatus == true && SparkleTotal.Value > minValue)
         {
             SparkleTotal.Value -= lossRate * Time.deltaTime;
             
