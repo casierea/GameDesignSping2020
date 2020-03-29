@@ -25,7 +25,7 @@ public class WeaponRobot : MonoBehaviour
         var otherHealth = other.GetComponent<PlayerHealth>();
         if (otherHealth == null)
         {
-            Debug.Log("no health module on other");
+            //Debug.Log("no health module on other");
             //abandon all hope
         }
         else

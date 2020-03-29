@@ -60,8 +60,8 @@ public class EnemyPatrolAi : MonoBehaviour
 
     public void playerClose(GameObject other)
     {
-        Debug.Log(other.tag);
-        Debug.Log(other);
+        //Debug.Log(other.tag);
+        //Debug.Log(other);
         
         //if (other.tag == "Enemy")
         if (other.tag == "Player")

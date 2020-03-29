@@ -10,7 +10,7 @@ public class HealthBar : MonoBehaviour
 
    public void SetMaxHealth(float health)
    {
-      Debug.Log(health);
+      //Debug.Log(health);
       slider.maxValue = health;
       slider.minValue = 0.0f;
    }
@@ -18,7 +18,7 @@ public class HealthBar : MonoBehaviour
    public void SetHealth(float health)
    {
       slider.value = health;
-      Debug.Log(health);
+      //Debug.Log(health);
    }
 
    //public void IncreaseSliderHealth()
