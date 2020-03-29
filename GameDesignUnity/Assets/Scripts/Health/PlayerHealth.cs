@@ -32,7 +32,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
-        healthBar.GetComponent<HealthBar>().SetHealth(currentHealth.Value);
+        //healthBar.GetComponent<HealthBar>().SetHealth(currentHealth.Value);
         onZeroHealth();
         
     }
