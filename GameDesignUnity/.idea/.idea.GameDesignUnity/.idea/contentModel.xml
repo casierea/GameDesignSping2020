@@ -56,6 +56,11 @@
           </e>
           <e p="ImageController.cs" t="Include" />
           <e p="InstantiateGameObject.cs" t="Include" />
+          <e p="MatchId" t="Include">
+            <e p="IdBehaviour.cs" t="Include" />
+            <e p="MarchMatchIDBehav.cs" t="Include" />
+            <e p="NameId.cs" t="Include" />
+          </e>
           <e p="MouseEvents.cs" t="Include" />
           <e p="Mover" t="Include">
             <e p="Movement.cs" t="Include" />
@@ -112,7 +117,9 @@
       <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
-      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
     </e>
   </component>
 </project>
