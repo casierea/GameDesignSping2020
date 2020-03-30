@@ -14,10 +14,10 @@ public class StringListData : ScriptableObject
 
     
     void Reset()
-    //public void Start()
+        //public void Start()
     {
        
-; 
+        ; 
         
         Debug.Log("strart");
         currentLineNumber = 0; 

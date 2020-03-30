@@ -10,7 +10,7 @@ public class TextBehaviour : MonoBehaviour
     private Text textObj;
 
     public StringListData stringListDataObj;
-
+  
 //awake is before start.
     void Awake()
     {
