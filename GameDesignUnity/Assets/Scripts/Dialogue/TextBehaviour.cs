@@ -15,11 +15,12 @@ public class TextBehaviour : MonoBehaviour
     void Awake()
     {
         textObj = GetComponent<Text>();
+        
     }
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -27,6 +28,7 @@ public class TextBehaviour : MonoBehaviour
     {
         //replace update with an event system   
         textObj.text = stringListDataObj.ReturnCurrentLine(); // this will constantly spit out current numbers. We like how short it is.
+        
      
     }
 }

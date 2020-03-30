@@ -271,7 +271,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: help me
 --- !u!222 &9354993
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1167,6 +1167,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6cfe95bd2309d964f8b6795004777429, type: 3}
+--- !u!1 &1122637406 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4555063177818413850, guid: 65ce69b285a70af45b0e780e713759c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 4555063177712785808}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1122637407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122637406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae6bd23c33999204f9927a48b167187e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeUpEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1122637406}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  time: 10
 --- !u!1 &1232963646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,13 +1661,13 @@ PrefabInstance:
     - target: {fileID: 4555063177818413852, guid: 65ce69b285a70af45b0e780e713759c0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4555063177818413852, guid: 65ce69b285a70af45b0e780e713759c0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 177077843}
+      objectReference: {fileID: 1122637407}
     - target: {fileID: 4555063177818413852, guid: 65ce69b285a70af45b0e780e713759c0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
@@ -1641,7 +1676,7 @@ PrefabInstance:
     - target: {fileID: 4555063177818413852, guid: 65ce69b285a70af45b0e780e713759c0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: 
+      value: StartTimer
       objectReference: {fileID: 0}
     - target: {fileID: 4555063177818413852, guid: 65ce69b285a70af45b0e780e713759c0,
         type: 3}
@@ -1657,6 +1692,14 @@ PrefabInstance:
         type: 3}
       propertyPath: button
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555063177929457321, guid: 65ce69b285a70af45b0e780e713759c0,
+        type: 3}
+      propertyPath: m_Text
+      value: 'collect bonus
+
+
+'
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4555063177818413855, guid: 65ce69b285a70af45b0e780e713759c0, type: 3}

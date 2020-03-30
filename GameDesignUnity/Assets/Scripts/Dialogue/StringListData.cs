@@ -12,11 +12,16 @@ public class StringListData : ScriptableObject
 
     public int currentLineNumber;
 
-    //public GameObject buttonImage;
-
-    private void Start()
+    
+    void Reset()
+    //public void Start()
     {
+       
+; 
+        
+        Debug.Log("strart");
         currentLineNumber = 0; 
+        Debug.Log("current line number 0");
     }
     
     public string ReturnCurrentLine()   //being called constantly. being called by text obj.
@@ -32,7 +37,7 @@ public class StringListData : ScriptableObject
         {
 
             return String.Empty;
-       
+      
         }  
     }
 
