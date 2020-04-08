@@ -1,28 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.UI;
 
 public class DestroyIt : MonoBehaviour
 {
-  public UnityEvent BeforeDestroyEvent;
-  public UnityEvent AfterDestroyEvent;
-    public Button button;
+    public UnityEvent BeforeDestroyEvent;
+    public UnityEvent AfterDestoryEvent;
 
-  public void DestroyThis()
-  {
-    BeforeDestroyEvent.Invoke();
-    //Destroy(button);
-    Destroy(button.gameObject);
-    Destroy(gameObject);
-    
-    Debug.Log("BeforeDestroy");
-    
-    
-    AfterDestroyEvent.Invoke();
-    gameObject.SetActive(true);
-    
-    
-  }
+    public void DestroyThis ()
+    {
+        BeforeDestroyEvent.Invoke();
+        Destroy(gameObject);
+
+        AfterDestoryEvent.Invoke();
+        gameObject.SetActive(true);
+    }
 }

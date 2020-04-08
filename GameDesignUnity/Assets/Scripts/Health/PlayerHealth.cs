@@ -62,7 +62,7 @@ public class PlayerHealth : MonoBehaviour
             gameObject.GetComponent<PlayerHealth>().enabled = false;
             print("dying");
 
-            new WaitForSeconds(2);
+            //new WaitForSeconds(2);
             
             DeathEvent.Invoke();
             
