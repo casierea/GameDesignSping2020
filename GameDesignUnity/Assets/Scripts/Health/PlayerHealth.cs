@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class PlayerHealth : MonoBehaviour
 
@@ -15,7 +16,7 @@ public class PlayerHealth : MonoBehaviour
     private GameObject droppedLoot; //this is the loot that is dropped in the dropLoot() function
 //public UnityEvent DeathEvent;
 //public UnityEvent DropLoot;
-
+    public UnityEvent DeathEvent; 
 
     public Slider healthBar;
 
@@ -55,34 +56,22 @@ public class PlayerHealth : MonoBehaviour
         {
 //disable collider
             (gameObject.GetComponent(typeof(Collider)) as Collider).isTrigger = false;
-//destroy game object
-            Destroy(gameObject);
-            //DeathEvent.invoke();
-            //dropLoot();
+
+            //Destroy(gameObject);
+            
+            gameObject.GetComponent<PlayerHealth>().enabled = false;
+            print("dying");
+
+            new WaitForSeconds(2);
+            
+            DeathEvent.Invoke();
+            
         }
 
         
     }
 
-    //public void HealHealth(float heal)
-    //{
-        //if (currentHealth < maxHealth)
-        //{
-        //    currentHealth += heal;
-        //}
-   // }
-   // private void dropLoot()
-   // {
-//convert to Scriptable Object or Unity Event call
-       // if (LootTable.Count > 0)
-        //{
-//instantiate loot from item destruction
-//check for existence of loot table
-//if loot table, then create loot
-           // int rand = Random.Range(0, LootTable.Count);
-            //droppedLoot = LootTable[rand];
-            //Instantiate(droppedLoot, gameObject.GetComponent<Transform>().position, gameObject.GetComponent<Transform>().rotation);
-        //}
+   
 
     //}
 

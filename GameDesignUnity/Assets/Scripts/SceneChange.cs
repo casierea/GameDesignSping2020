@@ -8,5 +8,15 @@ public class SceneChange : MonoBehaviour
     public void GoToNextScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+        
     }
+    
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("Quitgame");
+    }
+    
+    
+    
 }
