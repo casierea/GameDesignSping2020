@@ -21,11 +21,11 @@ public class FloatX : MonoBehaviour {
 
     void Update () {
         // Spin object around Y-Axis
-        transform.Rotate(new Vector3(0f, Time.deltaTime * derpPerSecond, 0f), Space.World);
+        //transform.Rotate(new Vector3(0f, Time.deltaTime * derpPerSecond, 0f), Space.World);
  
         //Float up and then down
         tempPos = posOffset;
-        tempPos.y += Mathf.Sin (Time.fixedTime * Mathf.PI * Continue) * speed;
+        tempPos.x += Mathf.Sin (Time.fixedTime * Mathf.PI * Continue) * speed;
  
         transform.position = tempPos;
     }
