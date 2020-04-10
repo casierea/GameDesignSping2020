@@ -9,7 +9,7 @@ public class LightBehaviour : MonoBehaviour
 {
     public FloatData SparkleTotal;
     public float StartSparkleVal = 100f;
-    public int lossRate = 5;
+    public int lossRate = 1;
     private Boolean lightStatus = false;
     public Slider SparkleBar;
 

@@ -36152,6 +36152,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyRobotWA
       objectReference: {fileID: 0}
+    - target: {fileID: 989721537, guid: 3d191c95a933b704db7f3698cba432c0, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1301984721}
+    - target: {fileID: 989721537, guid: 3d191c95a933b704db7f3698cba432c0, type: 3}
+      propertyPath: Candle
+      value: 
+      objectReference: {fileID: 1116878208}
     - target: {fileID: 989721544, guid: 3d191c95a933b704db7f3698cba432c0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 35.286873
@@ -36196,14 +36204,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 989721537, guid: 3d191c95a933b704db7f3698cba432c0, type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1301984721}
-    - target: {fileID: 989721537, guid: 3d191c95a933b704db7f3698cba432c0, type: 3}
-      propertyPath: Candle
-      value: 
-      objectReference: {fileID: 1116878208}
     - target: {fileID: 989721545, guid: 3d191c95a933b704db7f3698cba432c0, type: 3}
       propertyPath: EnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
@@ -41681,7 +41681,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1116878209, guid: b47693061dacc464d83cd7756f427606, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1116878209, guid: b47693061dacc464d83cd7756f427606, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -41745,6 +41745,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1116878209, guid: b47693061dacc464d83cd7756f427606, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116878209, guid: b47693061dacc464d83cd7756f427606, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116878209, guid: b47693061dacc464d83cd7756f427606, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
