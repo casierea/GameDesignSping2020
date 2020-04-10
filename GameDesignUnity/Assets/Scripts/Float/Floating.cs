@@ -21,7 +21,7 @@ public class Floating : MonoBehaviour {
 
     void Update () {
         // Spin object around Y-Axis
-        transform.Rotate(new Vector3(0f, Time.deltaTime * derpPerSecond, 0f), Space.World);
+       //transform.Rotate(new Vector3(0f, Time.deltaTime * derpPerSecond, 0f), Space.World);
  
        //Float up and then down
         tempPos = posOffset;
