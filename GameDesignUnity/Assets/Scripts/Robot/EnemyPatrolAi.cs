@@ -72,6 +72,7 @@ public class EnemyPatrolAi : MonoBehaviour
             Player.GetComponentInChildren<LightBehaviour>().lossRate += 1;
             this.GetComponentInChildren<RoboLightBehav>().lossRate -= 1;
             //Debug.Log(destination);    
+            Debug.Log("PLayer close");
 
         }
         
@@ -84,7 +85,7 @@ public class EnemyPatrolAi : MonoBehaviour
             destination = PatrolPoints[CurrentDestination].Value;
             Player.GetComponentInChildren<LightBehaviour>().lossRate -= 1;
             this.GetComponentInChildren <RoboLightBehav>().lossRate += 1;
-            //Debug.Log("player close false");
+            Debug.Log("player NOT close ");
         }
     }
 
