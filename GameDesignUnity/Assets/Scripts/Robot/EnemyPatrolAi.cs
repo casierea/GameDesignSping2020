@@ -84,16 +84,16 @@ public class EnemyPatrolAi : MonoBehaviour
             playerIsClose = false;
             destination = PatrolPoints[CurrentDestination].Value;
             Player.GetComponentInChildren<LightBehaviour>().lossRate -= 1;
-            this.GetComponentInChildren <RoboLightBehav>().lossRate += 1;
+            this.GetComponentInChildren <RoboLightBehav>().lossRate += 1;  
             Debug.Log("player NOT close ");
         }
     }
 
-   public IEnumerator PauseNavigation()
-    {
-        yield return new WaitForSeconds(3);     
+   //public IEnumerator PauseNavigation()
+    //{
+       // yield return new WaitForSeconds(3);     
         
-    }
+    //}
   
 }
 
