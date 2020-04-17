@@ -8,6 +8,12 @@ public class BoolCheck : MonoBehaviour
     public UnityEvent Open;
     public UnityEvent Warning;
 
+
+    private void Start()
+    {
+        
+    }
+
     public void CheckForItem ()
     {
         if (Inventory.Value >= check)
