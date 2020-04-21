@@ -20014,6 +20014,11 @@ PrefabInstance:
       propertyPath: Candle
       value: 
       objectReference: {fileID: 573121443}
+    - target: {fileID: 630822064121900029, guid: 9e6adf3553a0a7f4dae2929197951349,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4886963537346930225, guid: 9e6adf3553a0a7f4dae2929197951349,
         type: 3}
       propertyPath: m_Enabled
@@ -21011,7 +21016,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2016380653, guid: 0af7a87909aa51743a04621ab68cbd4c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4694139010510560103, guid: 0af7a87909aa51743a04621ab68cbd4c,
         type: 3}
@@ -21067,6 +21072,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2895754355913130001, guid: 0af7a87909aa51743a04621ab68cbd4c,
+        type: 3}
+      propertyPath: m_Shape
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4766795915810140540, guid: 0af7a87909aa51743a04621ab68cbd4c,
         type: 3}
@@ -34592,7 +34602,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1301984721, guid: b47693061dacc464d83cd7756f427606, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1116878208, guid: b47693061dacc464d83cd7756f427606, type: 3}
       propertyPath: m_TagString

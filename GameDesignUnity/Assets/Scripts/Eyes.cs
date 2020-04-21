@@ -10,13 +10,15 @@ public class Eyes : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        //if(other.tag == "Player")
-           // Enemy.GetComponent<AiFollow>().SawPlayer();
+        if(other.tag == "Player")
+            Enemy.GetComponent<AiFollow>().SawPlayer();
+        Debug.Log("Saw Player");
     }
 
     void OnTriggerExit(Collider other)
     {
-       // if(other.tag == "Player")
-           // Enemy.GetComponent<AiFollow>().LostPlayer();
+        if(other.tag == "Player")
+            Enemy.GetComponent<AiFollow>().LostPlayer();
+        Debug.Log("LostPlayer");
     }
 }
