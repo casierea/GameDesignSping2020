@@ -17,6 +17,11 @@ public class LightBehaviour : MonoBehaviour
     
     private void Start()
     {
+        
+        {
+            SparkleTotal.Value = SparkleTotal.maxValue;   //took off of robot light behaviour and put here
+        }
+        
         if (SparkleBar != null)
         {
             SparkleTotal.Value = StartSparkleVal;

@@ -10,10 +10,10 @@ public class RoboLightBehav : MonoBehaviour
     public int lossRate = 0;
     private Boolean lightStatus = true;
 
-    private void Start()
-    {
-        SparkleTotal.Value = SparkleTotal.maxValue;
-    }
+    //private void Start()
+   // {
+       // SparkleTotal.Value = SparkleTotal.maxValue;
+    //}
     private void Update()
     {
         this.GetComponent<Light>().enabled = lightStatus;

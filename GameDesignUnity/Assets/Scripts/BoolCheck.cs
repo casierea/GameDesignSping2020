@@ -11,7 +11,7 @@ public class BoolCheck : MonoBehaviour
 
     private void Start()
     {
-        
+        Inventory.Value = 0f; 
     }
 
     public void CheckForItem ()
