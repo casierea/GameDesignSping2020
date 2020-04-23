@@ -16,13 +16,13 @@ public class TriggerEvents : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         triggerEnterEvent.Invoke();
-        Debug.Log("Enter");
+       // Debug.Log("Enter");
     }
 
     private void OnTriggerExit(Collider other)
     {
         triggerExitEvent.Invoke();
-        Debug.Log("Exit");
+        //Debug.Log("Exit");
     }
 
 
