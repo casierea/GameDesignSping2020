@@ -27,13 +27,13 @@ public class OtherHealth : MonoBehaviour
             healthBar.GetComponent<HealthBar>().SetMaxHealth(maxHealth);
             healthBar.GetComponent<HealthBar>().SetHealth(currentHealth);
         }
-       
+
     }
 
     void Update()
     {
         onZeroHealth();
-        
+
     }
 
     public void ChangeHealth(float delta)
@@ -43,18 +43,23 @@ public class OtherHealth : MonoBehaviour
         {
             healthBar.GetComponent<HealthBar>().SetHealth(currentHealth);
         }
-        //healthBar.GetComponent<HealthBar>().SetHealth(currentHealth);
+//healthBar.GetComponent<HealthBar>().SetHealth(currentHealth);
     }
 
     private void onZeroHealth ()
     {
 //convert to Scriptable Object Event
 //call death event
-        if (currentHealth == 0)
+        if (currentHealth <= 0)
         {
 //disable collider
             (gameObject.GetComponent(typeof(Collider)) as Collider).isTrigger = false;
 //destroy game object
+            if (GetComponentInChildren<EnemyPatrolAi>().DrainOn)
+            {
+                GetComponentInParent<EnemyPatrolAi>().Player.GetComponentInChildren<LightBehaviour>().lossRate -= 1;
+            }
+
             Destroy(gameObject);
             dropLoot();
         }
