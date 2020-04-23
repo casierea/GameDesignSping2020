@@ -42,7 +42,7 @@ public class EnemyPatrolAi : MonoBehaviour
         }
 
 
-        else if (playerIsClose == false) //(destinationDistance < 1.5)
+        else if (playerIsClose == false & destinationDistance < 1.5)
         {
 
 // Debug.Log(CurrentDestination+ "destination counter");
