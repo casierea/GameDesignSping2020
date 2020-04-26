@@ -28666,6 +28666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: key3
       objectReference: {fileID: 0}
+    - target: {fileID: 1052660687, guid: 96c1de14c7661ac43afe2904d83ee624, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1052660689, guid: 96c1de14c7661ac43afe2904d83ee624, type: 3}
       propertyPath: m_LocalPosition.x
       value: -181.77
@@ -43105,9 +43109,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: GEMEnemyRobot
       objectReference: {fileID: 0}
+    - target: {fileID: 160285184, guid: f8f59d2d3f099e048ba62be16daeabcb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 160285193, guid: f8f59d2d3f099e048ba62be16daeabcb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.3
+      value: 9.2
       objectReference: {fileID: 0}
     - target: {fileID: 160285193, guid: f8f59d2d3f099e048ba62be16daeabcb, type: 3}
       propertyPath: m_LocalPosition.y
