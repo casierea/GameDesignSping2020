@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 class Pulser : MonoBehaviour
 {
-    public float FadeDuration = 1f;
+    public float FadeDuration = 2f;
     public Color Color1 = Color.gray;
     public Color Color2 = Color.white;
 
@@ -35,7 +35,7 @@ class Pulser : MonoBehaviour
         {
             lastColorChangeTime = Time.time;
 
-            // Switch colors
+            // Change colors
             var temp = startColor;
             startColor = endColor;
             endColor = temp;
