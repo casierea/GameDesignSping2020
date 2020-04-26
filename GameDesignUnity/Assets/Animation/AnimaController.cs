@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO.MemoryMappedFiles;
 using UnityEngine;
+using UnityEngine.Experimental.UIElements;
 
 public class AnimaController : MonoBehaviour
 {
@@ -11,8 +13,10 @@ public class AnimaController : MonoBehaviour
 
     private void Update()
     {
+        //if (Input.GetMouseButtonDown(1))
+            //Debug.Log("Pressed secondary button.");
         if (Input.GetButtonDown("enter"))
-        {
+        
             thePlayer.GetComponent<Animator>().Play("Swing");
         }
     }
@@ -21,4 +25,4 @@ public class AnimaController : MonoBehaviour
     //{
     //    animator.SetTrigger(name);
     //}
-}
+//THISONEWORKS
