@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,20 +18,21 @@ public class EnemyPatrolAi : MonoBehaviour
     public Boolean DrainOn = false;
     public Vector3 destination;
     private NavMeshAgent agent;
-
+    
     private void Start()
     {
-        destination = PatrolPoints[CurrentDestination].Value;
-
+        
+        
         agent = GetComponent<NavMeshAgent>();
+        destination = PatrolPoints[CurrentDestination].Value;
     }
-
-    private void Update()
+    
+    private void Update() //reorder maybe
     {
         agent.destination = destination;
         checkPlayerDistance();
         setDestination();
-
+        
     }
 
     private void setDestination()
@@ -42,20 +45,19 @@ public class EnemyPatrolAi : MonoBehaviour
         }
 
 
-        else if (playerIsClose == false & destinationDistance < 1.5)
+        else if (playerIsClose==false & destinationDistance < 1.5)
         {
-
-// Debug.Log(CurrentDestination+ "destination counter");
-            if (CurrentDestination < PatrolPoints.Count - 1)
+            
+           // Debug.Log(CurrentDestination+ "destination counter");
+            if (CurrentDestination < PatrolPoints.Count -1)
             {
-                CurrentDestination += 1;
+                CurrentDestination += 1;    
             }
             else
             {
                 CurrentDestination = 0;
             }
-
-//Debug.Log(CurrentDestination+ " destination counter " + PatrolPoints.Count);
+            //Debug.Log(CurrentDestination+ " destination counter " + PatrolPoints.Count);
             destination = PatrolPoints[CurrentDestination].Value;
         }
     }
@@ -64,25 +66,88 @@ public class EnemyPatrolAi : MonoBehaviour
     {
         var distanceToPlayer =
             Vector3.Distance(GetComponent<Transform>().position, Player.GetComponent<Transform>().position);
-//Debug.Log(other.tag);
-//Debug.Log(other);
-
-//add drain and target player if player is close
-//Debug.Log(distanceToPlayer+ " player distance");
+        //Debug.Log(other.tag);
+        //Debug.Log(other);
+        
+        //add drain and target player if player is close
+        //Debug.Log(distanceToPlayer+ " player distance");
         if (distanceToPlayer <= Player.GetComponentInChildren<SphereCollider>().radius + 3)
         {
 
             playerIsClose = true;
-//destination = Player.GetComponent<Transform>().position;
-//Debug.Log("player close " + distanceToPlayer + " " +
-//Player.GetComponentInChildren<SphereCollider>().radius);
+            //destination = Player.GetComponent<Transform>().position;
+            //Debug.Log("player close " + distanceToPlayer + " " +
+                      //Player.GetComponentInChildren<SphereCollider>().radius);
             if (DrainOn == false)
             {
-//Debug.Log("adding draning");
+                //Debug.Log("adding draning");
                 Player.GetComponentInChildren<LightBehaviour>().lossRate += 1;
                 this.GetComponentInChildren<RoboLightBehav>().lossRate -= 1;
                 DrainOn = true;
             }
         }
+
+        //remove drain and reset patrol destination if player is not close   
+        if (distanceToPlayer > Player.GetComponentInChildren<SphereCollider>().radius + 10) //light off radius should be .5
+        {
+            playerIsClose = false;
+            //destination = PatrolPoints[CurrentDestination].Value;
+            if (DrainOn == true)
+            {
+                //Debug.Log("removing drain");
+                Player.GetComponentInChildren<LightBehaviour>().lossRate -= 1;
+                this.GetComponentInChildren <RoboLightBehav>().lossRate += 1;
+                DrainOn = false;
+
+            }
+           // Debug.Log("player NOT close "+ distanceToPlayer+" " + Player.GetComponentInChildren<SphereCollider>().radius);
+        }
+
+        
     }
+    /*
+    public void playerClose(GameObject other)
+    {
+        var distanceToPlayer =
+            Vector3.Distance(GetComponent<Transform>().position, Player.GetComponent<Transform>().position);
+        
+        if (other.tag == "Player" &
+            distanceToPlayer <= Player.GetComponentInChildren<SphereCollider>().radius + 5)
+        {
+            
+            playerIsClose = true;
+            Debug.Log(distanceToPlayer+ "player distance");
+            if (DrainOn == false)
+            {
+                //Debug.Log("adding draning");
+                Player.GetComponentInChildren<LightBehaviour>().lossRate += 1;
+                this.GetComponentInChildren<RoboLightBehav>().lossRate -= 1;
+                DrainOn = true;
+            }
+
+        }
+        
+    }
+    public void playerNotClose(GameObject other)
+    {
+        var distanceToPlayer =
+            Vector3.Distance(GetComponent<Transform>().position, Player.GetComponent<Transform>().position);
+        if (other.tag == "Player" & 
+            distanceToPlayer > Player.GetComponentInChildren<SphereCollider>().radius + 10)
+        {
+            playerIsClose = false;
+            //destination = PatrolPoints[CurrentDestination].Value;
+            if (DrainOn == true)
+            {
+                Debug.Log("removing drain");
+                Player.GetComponentInChildren<LightBehaviour>().lossRate -= 1;
+                this.GetComponentInChildren <RoboLightBehav>().lossRate += 1;
+                DrainOn = false;
+
+            }
+            Debug.Log("player NOT close poop "+ distanceToPlayer);
+        }
+    }
+*/
+
 }
