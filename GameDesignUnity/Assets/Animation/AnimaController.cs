@@ -13,12 +13,14 @@ public class AnimaController : MonoBehaviour
 
     private void Update()
     {
-        //if (Input.GetMouseButtonDown(1))
+        //if (Input.GetMouseButtonDown(0))
             //Debug.Log("Pressed secondary button.");
         if (Input.GetButtonDown("enter"))
         
             thePlayer.GetComponent<Animator>().Play("Swing");
         }
+    
+    
     }
 
     //public void AnimCall(Animator animator)

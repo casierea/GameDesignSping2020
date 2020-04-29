@@ -15,16 +15,26 @@ public class AnimController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown("p"))
+        /*if (Input.GetKeyDown("p"))
         {
             //anim2.Play("AnimaSwing");
             anim2.Play("EmptSwingAnim");
-        }
+        }*/
         
-        if (Input.GetKeyDown("i"))
+        /*if (Input.GetKeyDown("i"))
         {
             //anim2.Play("AnimaSwing");
             anim2.Play("Berserker");
+        }*/
+
+        /*if (Input.GetMouseButtonDown(0))
+        {
+            anim2.Play("EmptSwingAnim");
+        }*/
+        
+        if (Input.GetMouseButtonDown(1))
+        {
+           anim2.Play("EmptSwingAnim");
         }
     }
 }

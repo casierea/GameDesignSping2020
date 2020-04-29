@@ -13222,6 +13222,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: SparkleTotal
+      value: 
+      objectReference: {fileID: 11400000, guid: ef808d53f9f72e24e887da0da18025d2,
+        type: 2}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: lossRate
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 989721536, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: LootTable.Array.size
       value: 1
@@ -13255,15 +13264,6 @@ PrefabInstance:
     - target: {fileID: 883310717, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: m_SpotAngle
       value: 41.25677
-      objectReference: {fileID: 0}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: SparkleTotal
-      value: 
-      objectReference: {fileID: 11400000, guid: ef808d53f9f72e24e887da0da18025d2,
-        type: 2}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: lossRate
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 989721540, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: m_Speed
@@ -14125,6 +14125,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: SparkleTotal
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f17f30210d063048a3c94cbdf604dce,
+        type: 2}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: lossRate
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 989721536, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: LootTable.Array.size
       value: 1
@@ -14158,15 +14167,6 @@ PrefabInstance:
     - target: {fileID: 883310717, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: m_SpotAngle
       value: 35.667152
-      objectReference: {fileID: 0}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: SparkleTotal
-      value: 
-      objectReference: {fileID: 11400000, guid: 3f17f30210d063048a3c94cbdf604dce,
-        type: 2}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: lossRate
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 989721540, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: m_Speed
@@ -18325,15 +18325,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 989721536, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: LootTable.Array.data[0]
-      value: 
-      objectReference: {fileID: 1695457636, guid: e63ead771ba6a1f4d804f482008a5d76,
-        type: 3}
-    - target: {fileID: 989721536, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: maxHealth
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: SparkleTotal
       value: 
@@ -18342,6 +18333,15 @@ PrefabInstance:
     - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: lossRate
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 989721536, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: LootTable.Array.data[0]
+      value: 
+      objectReference: {fileID: 1695457636, guid: e63ead771ba6a1f4d804f482008a5d76,
+        type: 3}
+    - target: {fileID: 989721536, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: maxHealth
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 989721541, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: m_Size.x
@@ -20691,6 +20691,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.6427002
       objectReference: {fileID: 0}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: lossRate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: SparkleTotal
+      value: 
+      objectReference: {fileID: 11400000, guid: 531b7a4aea1705143ac5d041fe651c3b,
+        type: 2}
     - target: {fileID: 989721536, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: LootTable.Array.data[0]
       value: 
@@ -20712,15 +20721,6 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: lossRate
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: SparkleTotal
-      value: 
-      objectReference: {fileID: 11400000, guid: 531b7a4aea1705143ac5d041fe651c3b,
-        type: 2}
     - target: {fileID: 989721540, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: m_Speed
       value: 8
@@ -21025,6 +21025,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.6427002
       objectReference: {fileID: 0}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: lossRate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: SparkleTotal
+      value: 
+      objectReference: {fileID: 11400000, guid: ceb77d40b5e7c0e49831c1226142fbbc,
+        type: 2}
     - target: {fileID: 989721536, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: LootTable.Array.data[0]
       value: 
@@ -21046,15 +21055,6 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: lossRate
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: SparkleTotal
-      value: 
-      objectReference: {fileID: 11400000, guid: ceb77d40b5e7c0e49831c1226142fbbc,
-        type: 2}
     - target: {fileID: 989721540, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: m_Speed
       value: 10
@@ -22315,6 +22315,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.6427002
       objectReference: {fileID: 0}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: lossRate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: SparkleTotal
+      value: 
+      objectReference: {fileID: 11400000, guid: 06df4f3ed7eedfd449c4d997d067d2b8,
+        type: 2}
     - target: {fileID: 989721536, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: LootTable.Array.data[0]
       value: 
@@ -22336,15 +22345,6 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: lossRate
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: SparkleTotal
-      value: 
-      objectReference: {fileID: 11400000, guid: 06df4f3ed7eedfd449c4d997d067d2b8,
-        type: 2}
     - target: {fileID: 989721540, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: m_Speed
       value: 6
@@ -24864,6 +24864,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 2.9355047
       objectReference: {fileID: 0}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: lossRate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: SparkleTotal
+      value: 
+      objectReference: {fileID: 11400000, guid: 792ff031ec608f946825da5878f28dd2,
+        type: 2}
     - target: {fileID: 989721536, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: LootTable.Array.size
       value: 1
@@ -24898,19 +24911,6 @@ PrefabInstance:
       propertyPath: m_SpotAngle
       value: 54.542046
       objectReference: {fileID: 0}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: lossRate
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: SparkleTotal
-      value: 
-      objectReference: {fileID: 11400000, guid: 792ff031ec608f946825da5878f28dd2,
-        type: 2}
     - target: {fileID: 989721540, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: m_Speed
       value: 15
@@ -31827,6 +31827,42 @@ PrefabInstance:
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[19].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1919222115, guid: 2ac425b673f88b24d84820224fbc0854, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919222116, guid: 2ac425b673f88b24d84820224fbc0854, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919222116, guid: 2ac425b673f88b24d84820224fbc0854, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9600265
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919222116, guid: 2ac425b673f88b24d84820224fbc0854, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919222116, guid: 2ac425b673f88b24d84820224fbc0854, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1730399159, guid: 2ac425b673f88b24d84820224fbc0854, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1730399159, guid: 2ac425b673f88b24d84820224fbc0854, type: 3}
+      propertyPath: m_Color.g
+      value: 0.70603347
+      objectReference: {fileID: 0}
+    - target: {fileID: 1730399159, guid: 2ac425b673f88b24d84820224fbc0854, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1730399159, guid: 2ac425b673f88b24d84820224fbc0854, type: 3}
+      propertyPath: m_Intensity
+      value: 2.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ac425b673f88b24d84820224fbc0854, type: 3}
 --- !u!1001 &1602370411
@@ -32406,6 +32442,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.6427002
       objectReference: {fileID: 0}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: SparkleTotal
+      value: 
+      objectReference: {fileID: 11400000, guid: ef82c13a2e3df8a4b9e8cf8f033138cd,
+        type: 2}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: lossRate
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 989721536, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: LootTable.Array.data[0]
       value: 
@@ -32421,19 +32470,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 883310717, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: SparkleTotal
-      value: 
-      objectReference: {fileID: 11400000, guid: ef82c13a2e3df8a4b9e8cf8f033138cd,
-        type: 2}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: lossRate
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 989721540, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
@@ -33974,6 +34010,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.6427002
       objectReference: {fileID: 0}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: lossRate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: SparkleTotal
+      value: 
+      objectReference: {fileID: 11400000, guid: 531b7a4aea1705143ac5d041fe651c3b,
+        type: 2}
     - target: {fileID: 989721536, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: LootTable.Array.data[0]
       value: 
@@ -33995,15 +34040,6 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: lossRate
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: SparkleTotal
-      value: 
-      objectReference: {fileID: 11400000, guid: 531b7a4aea1705143ac5d041fe651c3b,
-        type: 2}
     - target: {fileID: 989721540, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: m_Speed
       value: 8
@@ -36755,6 +36791,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: SparkleTotal
+      value: 
+      objectReference: {fileID: 11400000, guid: ef808d53f9f72e24e887da0da18025d2,
+        type: 2}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: lossRate
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 989721536, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: LootTable.Array.size
       value: 1
@@ -36784,15 +36829,6 @@ PrefabInstance:
     - target: {fileID: 883310717, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: m_Color.b
       value: 0.033018887
-      objectReference: {fileID: 0}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: SparkleTotal
-      value: 
-      objectReference: {fileID: 11400000, guid: ef808d53f9f72e24e887da0da18025d2,
-        type: 2}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: lossRate
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 989721540, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: m_Speed
@@ -36834,10 +36870,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.45
       objectReference: {fileID: 0}
-    - target: {fileID: 883310714, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: m_Layer
-      value: 16
-      objectReference: {fileID: 0}
     - target: {fileID: 989721541, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: m_Size.x
       value: 1.68
@@ -36845,6 +36877,10 @@ PrefabInstance:
     - target: {fileID: 989721541, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: m_Size.z
       value: 1.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 883310714, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
@@ -36967,6 +37003,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.6427002
       objectReference: {fileID: 0}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: lossRate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: SparkleTotal
+      value: 
+      objectReference: {fileID: 11400000, guid: ceb77d40b5e7c0e49831c1226142fbbc,
+        type: 2}
     - target: {fileID: 989721536, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: LootTable.Array.data[0]
       value: 
@@ -36988,15 +37033,6 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: lossRate
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: SparkleTotal
-      value: 
-      objectReference: {fileID: 11400000, guid: ceb77d40b5e7c0e49831c1226142fbbc,
-        type: 2}
     - target: {fileID: 989721540, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: m_Speed
       value: 6
@@ -38047,6 +38083,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: SparkleTotal
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f17f30210d063048a3c94cbdf604dce,
+        type: 2}
+    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
+      propertyPath: lossRate
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 989721536, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: LootTable.Array.size
       value: 1
@@ -38076,15 +38121,6 @@ PrefabInstance:
     - target: {fileID: 883310717, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: m_Color.b
       value: 0.033018887
-      objectReference: {fileID: 0}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: SparkleTotal
-      value: 
-      objectReference: {fileID: 11400000, guid: 3f17f30210d063048a3c94cbdf604dce,
-        type: 2}
-    - target: {fileID: 883310716, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
-      propertyPath: lossRate
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 989721540, guid: 4e9f72a1834bf67439cdb3331a32cc24, type: 3}
       propertyPath: m_Speed
