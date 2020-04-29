@@ -23,9 +23,9 @@ public class EnemyFire : MonoBehaviour
         if (other.tag == "Player" & readyToFire)
         {	
             Invoke("BeginShoot", 0.5f); 
-            Debug.Log("After begin Shoot" + readyToFire);
+            //Debug.Log("After begin Shoot" + readyToFire);
             StartCoroutine(ShootDelay(1.0f));
-            Debug.Log("After begin Delay" + readyToFire);
+            //Debug.Log("After begin Delay" + readyToFire);
         }
     }
 
@@ -34,7 +34,7 @@ public class EnemyFire : MonoBehaviour
         readyToFire = false;
         yield return new WaitForSeconds(waitTime);
         readyToFire = true; 
-        Debug.Log("After ready set true" + readyToFire);
+        //Debug.Log("After ready set true" + readyToFire);
     }
 
     void BeginShoot()

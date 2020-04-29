@@ -39,7 +39,7 @@ public class LightBehaviour : MonoBehaviour
         {
             this.GetComponent<Light>().range = SparkleTotal.Value;
             this.GetComponent<Light>().intensity = SparkleTotal.Value /50;  //was10
-            this.GetComponent<SphereCollider>().radius = SparkleTotal.Value / 20;  //was10
+            this.GetComponent<SphereCollider>().radius = SparkleTotal.Value / 10;  //was10
             
         }
         else
