@@ -27,13 +27,13 @@ public class OtherHealth : MonoBehaviour
             healthBar.GetComponent<HealthBar>().SetMaxHealth(maxHealth);
             healthBar.GetComponent<HealthBar>().SetHealth(currentHealth);
         }
-
+       
     }
 
     void Update()
     {
         onZeroHealth();
-
+        
     }
 
     public void ChangeHealth(float delta)
@@ -43,22 +43,25 @@ public class OtherHealth : MonoBehaviour
         {
             healthBar.GetComponent<HealthBar>().SetHealth(currentHealth);
         }
-//healthBar.GetComponent<HealthBar>().SetHealth(currentHealth);
+        //healthBar.GetComponent<HealthBar>().SetHealth(currentHealth);
     }
 
     private void onZeroHealth ()
     {
-//convert to Scriptable Object Event
-//call death event
+        //call death event
         if (currentHealth <= 0)
         {
-//disable collider
+            //disable collider
             (gameObject.GetComponent(typeof(Collider)) as Collider).isTrigger = false;
-//destroy game object
-            if (GetComponentInChildren<EnemyPatrolAi>().DrainOn)
+            //destroy game object
+            if (GetComponentInChildren<EnemyPatrolAi>() != null)
             {
-                GetComponentInParent<EnemyPatrolAi>().Player.GetComponentInChildren<LightBehaviour>().lossRate -= 1;
+                if (GetComponentInChildren<EnemyPatrolAi>().DrainOn)
+                {
+                    GetComponentInParent<EnemyPatrolAi>().Player.GetComponentInChildren<LightBehaviour>().lossRate -= 1;                
+                }    
             }
+            
 
             Destroy(gameObject);
             dropLoot();
@@ -68,12 +71,11 @@ public class OtherHealth : MonoBehaviour
 
     private void dropLoot()
     {
-//convert to Scriptable Object or Unity Event call
         if (LootTable.Count > 0)
         {
-//instantiate loot from item destruction
-//check for existence of loot table
-//if loot table, then create loot
+            //instantiate loot from item destruction
+            //check for existence of loot table
+            //if loot table, then create loot
             int rand = Random.Range(0, LootTable.Count);
             droppedLoot = LootTable[rand];
             Instantiate(droppedLoot, gameObject.GetComponent<Transform>().position, gameObject.GetComponent<Transform>().rotation);
