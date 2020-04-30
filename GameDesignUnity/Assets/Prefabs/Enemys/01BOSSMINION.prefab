@@ -80,9 +80,9 @@ GameObject:
   - component: {fileID: 6955525480632740536}
   - component: {fileID: 5136709841722314542}
   - component: {fileID: 6999049096827942820}
-  - component: {fileID: 2283032133622120039}
   - component: {fileID: 6986447415515310045}
   - component: {fileID: 6310511216463790130}
+  - component: {fileID: 570115985635016305}
   m_Layer: 12
   m_Name: 01BOSSMINION
   m_TagString: Enemy
@@ -163,29 +163,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2283032133622120039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6977315403103443990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fb143fa789a96f43a6cdcd602a34394, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SwordDamage: {fileID: 11400000, guid: 66577336aa9103e4b9d23ba6c0ef97c0, type: 2}
-  Enable:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  Trigger:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &6986447415515310045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,3 +199,19 @@ MonoBehaviour:
   currentHealth: 0
   LootTable: []
   healthBar: {fileID: 0}
+--- !u!54 &570115985635016305
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6977315403103443990}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

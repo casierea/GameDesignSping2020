@@ -11,7 +11,7 @@ public class BossNav : MonoBehaviour
 {
     //used in FixedUpdate
     public GameObject Player;
-    public Boolean playerIsClose;
+    public Boolean playerIsClose =false;
 
     public Rigidbody thruster;
     public float thrust;
@@ -49,8 +49,8 @@ public class BossNav : MonoBehaviour
         navPoints.Add(nav4);
 
         thruster = GetComponent<Rigidbody>();
-        target = Player.GetComponent<Transform>().position;
-
+        //target = Player.GetComponent<Transform>().position;
+        changeDestination();
     }
 
     void Update()
@@ -93,7 +93,7 @@ public class BossNav : MonoBehaviour
             Vector3.Distance(GetComponent<Transform>().position, Player.GetComponent<Transform>().position);
 
         if (distanceToPlayer <= Player.GetComponentInChildren<SphereCollider>().radius + 3)
-        {
+        { 
             playerIsClose = true;
         }
 

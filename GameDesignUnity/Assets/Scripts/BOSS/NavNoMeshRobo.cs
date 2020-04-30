@@ -20,10 +20,10 @@ public class NavNoMeshRobo : MonoBehaviour
 
     void Start()
     {
-        nav1 = new Vector3(144, 4, -27);
-        nav2 = new Vector3(75, 4, -27);
-        nav3 = new Vector3(75, 4, 46);
-        nav4 = new Vector3(144, 4, 46);
+        nav1 = new Vector3(-22, 62.5f, 347);
+        nav2 = new Vector3(-22, 62.5f, 304.6f);
+        nav3 = new Vector3(50, 62.5f, 304.6f);
+        nav4 = new Vector3(50, 62.5f, 313.7f);
         
         navPoints.Add(nav1);
         navPoints.Add(nav2);

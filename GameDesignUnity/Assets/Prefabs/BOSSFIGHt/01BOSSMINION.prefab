@@ -198,11 +198,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20bb9f0b6c79730469ff7e4952d742a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nav1: {x: 96, y: 2, z: 0}
-  nav2: {x: 96, y: 2, z: 14}
-  nav3: {x: 121, y: 2, z: 14}
-  nav4: {x: 121, y: 2, z: -5}
-  Player: {fileID: 0}
+  nav1: {x: -22, y: 62.5, z: 347}
+  nav2: {x: -22, y: 62.5, z: 304.6}
+  nav3: {x: 50, y: 62.5, z: 304.6}
+  nav4: {x: 50, y: 62.5, z: 313.7}
+  Player: {fileID: 1301984721, guid: 13fef778fea870d43b252e099276d2be, type: 3}
   playerIsClose: 0
   target: {x: 1, y: 1, z: 1}
   speed: 4
