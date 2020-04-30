@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class LightBehaviour : MonoBehaviour
 {
     public FloatData SparkleTotal;
-    public float StartSparkleVal = 100f;
+    //public float StartSparkleVal = 100f;
     public int lossRate = 1;
     private Boolean lightStatus = false;
     public Slider SparkleBar;
@@ -18,13 +18,13 @@ public class LightBehaviour : MonoBehaviour
     private void Start()
     {
         
-        {
-            SparkleTotal.Value = SparkleTotal.maxValue;   //took off of robot light behaviour and put here
-        }
+        
+        SparkleTotal.Value = SparkleTotal.maxValue;   //took off of robot light behaviour and put here
+        
         
         if (SparkleBar != null)
         {
-            SparkleTotal.Value = StartSparkleVal;
+            SparkleTotal.Value = SparkleTotal.maxValue;
             SparkleBar.GetComponent<SparkleBar>().SetMaxSparkle(SparkleTotal.maxValue);
             SparkleBar.GetComponent<SparkleBar>().SetSparkle(SparkleTotal.Value);
             

@@ -33306,10 +33306,18 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 505342752}
+    - target: {fileID: 1301984724, guid: 2ac425b673f88b24d84820224fbc0854, type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1301984723, guid: 2ac425b673f88b24d84820224fbc0854, type: 3}
       propertyPath: SparkleBar
       value: 
       objectReference: {fileID: 1662011461}
+    - target: {fileID: 1301984723, guid: 2ac425b673f88b24d84820224fbc0854, type: 3}
+      propertyPath: maxSparkle
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1116878213, guid: 2ac425b673f88b24d84820224fbc0854, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.51

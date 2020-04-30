@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class valueManager : MonoBehaviour
 {
     public FloatData SparkleTotal;
-    //public FloatData maxSparkle;
+    
     //public FloatData currentSparkle;
     
     public Slider SparkleBar;
@@ -15,7 +15,7 @@ public class valueManager : MonoBehaviour
 
     void Start()
     {
-        //SparkleTotal.Value = SparkleTotal.maxValue;
+        SparkleTotal.Value = SparkleTotal.maxValue;
         if (SparkleBar != null)
         {
             //SparkleBar.GetComponent<SparkleBar>().SetMaxSparkle(SparkleTotal.maxValue);
@@ -27,7 +27,10 @@ public class valueManager : MonoBehaviour
     {
       
         SparkleTotal.Value += delta;
-        
+        if (SparkleTotal.Value > SparkleTotal.maxValue)
+        {
+            SparkleTotal.Value = SparkleTotal.maxValue;
+        }
         if (SparkleBar != null)
         {
             SparkleBar.GetComponent<SparkleBar>().SetSparkle(SparkleTotal.Value);
