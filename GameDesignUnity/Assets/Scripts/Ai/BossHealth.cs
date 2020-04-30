@@ -49,6 +49,7 @@ public class BossHealth : MonoBehaviour
 
            
             Destroy(gameObject);
+            
             //dropLoot();
         }
 
