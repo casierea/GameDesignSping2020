@@ -29,8 +29,9 @@ public class NavNoMeshRobo : MonoBehaviour
         navPoints.Add(nav2);
         navPoints.Add(nav3);
         navPoints.Add(nav4);
-
-        target = Player.GetComponent<Transform>().position;
+        //setDestination();
+        //target = Player.GetComponent<Transform>().position;
+        target = nav1;
 
     }
 
@@ -52,7 +53,7 @@ public class NavNoMeshRobo : MonoBehaviour
             target = Player.GetComponent<Transform>().position;
         }
         
-        else if (playerIsClose==false & destinationDistance < 1.5)
+        else if (playerIsClose==false & destinationDistance < 5 )
         {
             changeDestination();
         }
