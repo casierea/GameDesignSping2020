@@ -28,7 +28,6 @@ public class PlayerHealth : MonoBehaviour
             healthBar.GetComponent<HealthBar>().SetMaxHealth(maxHealth);
             healthBar.GetComponent<HealthBar>().SetHealth(currentHealth.Value);
         }
-       
     }
 
     void Update()
