@@ -23,17 +23,25 @@ public class onTriggerSword : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         var otherHealth = other.GetComponent<OtherHealth>();
-        if (otherHealth == null)
-        {
-            //Debug.Log("no health module on other");
-            //abandon all hope
-        }
-        else
+        var bossHealth = other.GetComponent<BossHealth>();
+        var thrusterHealth = other.GetComponent<thrusterHealth>();
+        if (otherHealth != null)
         {
             //Trigger.Invoke();
             otherHealth.ChangeHealth(SwordDamage.Value);
             //Debug.Log("trigger entered SWORRRDD");    
         }
+
+        if (bossHealth != null)
+        {
+            bossHealth.ChangeHealth(SwordDamage.Value);
+        }
+        if (thrusterHealth != null)
+        {
+            thrusterHealth.ChangeHealth(SwordDamage.Value);
+        }
+
+        
         
     }
 }

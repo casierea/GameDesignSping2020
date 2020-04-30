@@ -30,12 +30,15 @@
             <e p="AiPlayer.cs" t="Include" />
             <e p="BasicAi.cs" t="Include" />
             <e p="BossHealth.cs" t="Include" />
-            <e p="BossNav.cs" t="Include" />
-            <e p="NavNoMeshRobo.cs" t="Include" />
             <e p="ThurusterHealth.cs" t="Include" />
           </e>
           <e p="AiFollow.cs" t="Include" />
           <e p="BoolCheck.cs" t="Include" />
+          <e p="BOSS" t="Include">
+            <e p="BossNav.cs" t="Include" />
+            <e p="NavNoMeshRobo.cs" t="Include" />
+            <e p="thrusterHealth.cs" t="Include" />
+          </e>
           <e p="Camera" t="Include">
             <e p="CameraFocus.cs" t="Include" />
             <e p="ControlCam.cs" t="Include" />
