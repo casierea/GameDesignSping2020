@@ -19,6 +19,12 @@ public class updateValue : ScriptableObject
         {
             targetData.Value = ValueStore.maxValue;
         }
+
+        /*if (targetObject.name == "Health Slider")
+        {
+            Debug.Log("player health mod");
+            player = 
+        }*/
     }
 
 }
