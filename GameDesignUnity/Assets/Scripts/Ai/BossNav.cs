@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.Experimental.PlayerLoop;
 using Random = UnityEngine.Random;
 
 
@@ -8,16 +11,17 @@ public class BossNav : MonoBehaviour
 {
     //used in FixedUpdate
     public GameObject Player;
+    public Boolean playerIsClose;
+
     public Rigidbody thruster;
     public float thrust;
-
     public Vector3 nav1;
     public Vector3 nav2;
     public Vector3 nav3;
     public Vector3 nav4;
     List<Vector3> navPoints = new List<Vector3>(); // empty now
     
-
+    
     public GameObject thruster1;
     public GameObject thruster2;
     public GameObject thruster3;
@@ -27,9 +31,11 @@ public class BossNav : MonoBehaviour
     public int thrustTotal = 0;
     public int baseSpeed = 5;
     public int thrusterTotal = 0;
+    
     [SerializeField] private Vector3 target = new Vector3(1, 1, 1);
     [SerializeField] private float speed = 1;
     
+
     // Start is called before the first frame update
     
     void Start()
@@ -42,49 +48,64 @@ public class BossNav : MonoBehaviour
         navPoints.Add(nav2);
         navPoints.Add(nav3);
         navPoints.Add(nav4);
-        //thrust = 1;
+        //thrust = 500;
         //thrusterSpeed = 2;
         //baseSpeed = 5;
-        
+
         thruster = GetComponent<Rigidbody>();
         target = Player.GetComponent<Transform>().position;
 
     }
 
-    // Update is called once per frame
     void Update()
     {
-        thrusterCheck();
+        checkPlayerDistance();
+        setDestination();
         moveTowards();
-         
-        if (Vector3.Distance(gameObject.GetComponent<Transform>().position, target) < 5)
+    }
+    
+
+    private void setDestination()
+    {
+        float destinationDistance = Vector3.Distance(target, this.GetComponent<Transform>().position);
+
+        if (playerIsClose)
         {
-            changeDestination();    
-            Debug.Log(target);
+            target = Player.GetComponent<Transform>().position;
         }
         
-        
+        else if (playerIsClose==false & destinationDistance < 1.5)
+        {
+            changeDestination();
+        }
     }
-    void FixedUpdate()
-    {
-        
-    }
-
-    void fireThruster()
-    {
-        //move boss upwards like a jump
-        //also look at impulse()
-        thruster.AddForce(transform.forward * thrust);
-    }
-
-
+    
     void changeDestination()
     {
 
-        navPoints.Add(Player.GetComponent<Transform>().position);
+        //Vector3 playerPos = Player.GetComponent<Transform>().position;
+        //navPoints.Add(playerPos);
         // //
         int rand = Random.Range(0, navPoints.Count);
         target = navPoints[rand];
+    }
+
+    public void checkPlayerDistance()
+    {
+        var distanceToPlayer =
+            Vector3.Distance(GetComponent<Transform>().position, Player.GetComponent<Transform>().position);
+
+        if (distanceToPlayer <= Player.GetComponentInChildren<SphereCollider>().radius + 3)
+        {
+            playerIsClose = true;
+        }
+
+        //remove drain and reset patrol destination if player is not close   
+        if (distanceToPlayer > Player.GetComponentInChildren<SphereCollider>().radius + 10
+        ) //light off radius should be .5
+        {
+            playerIsClose = false;
+        }
     }
     
     void moveTowards()

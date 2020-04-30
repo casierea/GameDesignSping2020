@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class bossHealth : MonoBehaviour
+public class BossHealth : MonoBehaviour
 
 
 {
@@ -14,10 +14,11 @@ public class bossHealth : MonoBehaviour
     public float currentHealth;
     private GameObject droppedLoot; //this is the loot that is dropped in the dropLoot() function
     public GameObject enemyRobo;
-
+    private GameObject player;
 
     void Start()
     {
+        player = GetComponentInParent<BossNav>().Player;
         currentHealth = maxHealth;
      
     }
@@ -32,7 +33,7 @@ public class bossHealth : MonoBehaviour
     {
         currentHealth += delta;
 
-        if (delta < 0)
+        if (delta < 0 & player.GetComponentInChildren<LightBehaviour>().lightStatus==false)
         {
             spawnBot();
         }

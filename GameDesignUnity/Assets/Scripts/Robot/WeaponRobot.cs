@@ -22,19 +22,15 @@ public class WeaponRobot : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        var otherHealth = other.GetComponent<PlayerHealth>();
-        if (otherHealth == null)
-        {
-            //Debug.Log("no health module on other");
-            //abandon all hope
-        }
-        else
-        {
-            //Trigger.Invoke();
-            otherHealth.ChangeHealth(SwordDamage.Value);
-            //Debug.Log("trigger entered BEEP");    
-        }
+        // var otherHealth = other.GetComponent<PlayerHealth>();
         
+        //Debug.Log("triggered robo sword");
+        if (other.GetComponent<PlayerHealth>() != null)
+        {
+            other.GetComponent<PlayerHealth>().ChangeHealth(SwordDamage.Value);
+            Debug.Log("doin the damage"+SwordDamage.Value);
+        }
+
         // knock. retrigger collider when player touches robot again. Velocity to rigid body on the ontriggerenter
     }
 }
