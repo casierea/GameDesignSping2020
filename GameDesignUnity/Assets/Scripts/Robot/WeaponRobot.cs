@@ -28,7 +28,7 @@ public class WeaponRobot : MonoBehaviour
         if (other.GetComponent<PlayerHealth>() != null)
         {
             other.GetComponent<PlayerHealth>().ChangeHealth(SwordDamage.Value);
-            Debug.Log("doin the damage"+SwordDamage.Value);
+            //Debug.Log("doin the damage"+SwordDamage.Value);
         }
 
         // knock. retrigger collider when player touches robot again. Velocity to rigid body on the ontriggerenter

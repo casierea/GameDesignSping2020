@@ -8,7 +8,7 @@ public class PlayerHealth : MonoBehaviour
 
 {
 //change to FloatData
-    public float maxHealth = 100f;
+    public float maxHealth = 300f;
 //change to private in production
     public FloatData currentHealth;
     public List<GameObject> LootTable;

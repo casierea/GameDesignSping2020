@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3650471647894480906}
   - component: {fileID: 3650471647894480909}
   - component: {fileID: 3650471647894480908}
-  - component: {fileID: 3650471647894480911}
   - component: {fileID: 3650471647894480910}
   - component: {fileID: 3650471647894480913}
   - component: {fileID: 3650471647894480912}
@@ -95,29 +94,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3650471647894480911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3650471647894480915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fb143fa789a96f43a6cdcd602a34394, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SwordDamage: {fileID: 11400000, guid: 5a1a158a090e1ee4fb17b2f5f92e31f5, type: 2}
-  Enable:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  Trigger:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!54 &3650471647894480910
 Rigidbody:
   m_ObjectHideFlags: 0

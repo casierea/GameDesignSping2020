@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WaitAndDestroy : MonoBehaviour
 {
-    public float bulletLastsSeconds = 3;
+    public float bulletLastsSeconds = 5;
     // Use this for initialization
     IEnumerator Start () {
         yield return new WaitForSeconds(bulletLastsSeconds);

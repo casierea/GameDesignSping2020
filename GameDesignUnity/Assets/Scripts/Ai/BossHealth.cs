@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class BossHealth : MonoBehaviour
 
@@ -15,7 +16,9 @@ public class BossHealth : MonoBehaviour
     private GameObject droppedLoot; //this is the loot that is dropped in the dropLoot() function
     public GameObject enemyRobo;
     private GameObject player;
-
+    
+    public UnityEvent WinEvent; 
+    
     void Start()
     {
         player = GetComponentInParent<BossNav>().Player;
@@ -49,7 +52,7 @@ public class BossHealth : MonoBehaviour
 
            
             Destroy(gameObject);
-            
+            WinEvent.Invoke();
             //dropLoot();
         }
 
